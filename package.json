@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-demo",
+  "version": "1.0.0",
+  "description": "Orange-ci demo for NodeJS, including ESLint, CommitLint and others",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint src/*.js -c .eslintrc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.code.oa.com/orange-ci/nodejs-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0"
+  },
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
+
+

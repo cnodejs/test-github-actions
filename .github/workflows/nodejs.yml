@@ -18,7 +18,7 @@ jobs:
     - name: test
       run: cat $(find /home/runner/work/_temp/*.sh | head -n 1)
     - name: 打印自己的 pid 和 env
-      run: echo $$ && env && ps -ef
+      run: echo $$ && cd /home && export A=1 && env && ps -ef
     - name: 打印自己的 pid 和 env
       run: echo $$ && env && ps -ef
     - name: Use Node.js 10.x

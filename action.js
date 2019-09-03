@@ -1,8 +1,8 @@
 const cp = require("child_process");
 const path = require("path");
-console.log(process)
+const core = require("@actions/core")
 
-process.env["PATH"] = `/home${path.delimiter}${process.env["PATH"]}`
+core.addPath("/home")
 
 setTimeout(() => {}, 2000)
 

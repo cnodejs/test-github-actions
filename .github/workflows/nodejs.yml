@@ -15,6 +15,8 @@ jobs:
         node-version: 12.x
     - name: 本地 action
       uses: ./
+    - name: test
+      run: ls /home/runner/work/_temp/
     - name: 打印自己的 pid 和 env
       run: echo $$ && env && ps -ef
     - name: 打印自己的 pid 和 env

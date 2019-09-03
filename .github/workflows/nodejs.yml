@@ -16,7 +16,7 @@ jobs:
     - name: 本地 action
       uses: ./
     - name: 打印自己的 pid 和 env
-      run: echo $$ && env
+      run: echo $$ && env && ps -aux
     - name: 打印自己的 pid 和 env
       run: echo $$ && env
     - name: Use Node.js 10.x

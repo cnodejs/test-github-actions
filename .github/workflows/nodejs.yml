@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: test
-      run: ps -aux
-    - name: test
-      run: ps -aux
+    - name: 打印自己的 pid
+      run: echo $$
+    - name: 打印自己的 pid
+      run: echo $$

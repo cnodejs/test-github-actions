@@ -17,6 +17,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: 本地 action
+      uses: ./
+      with:
+        node-version: ${{ matrix.node-version }}
     - name: 打印自己的 pid
       run: echo $$
     - name: 打印自己的 pid

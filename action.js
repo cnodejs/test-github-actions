@@ -1,8 +1,10 @@
 const cp = require("child_process");
 const path = require("path");
-const core = require("@actions/core")
+// const core = require("@actions/core")
 
-core.addPath("/home")
+// core.addPath("/home")
+
+console.log("##[add-path]/homemaple")
 
 setTimeout(() => {}, 2000)
 

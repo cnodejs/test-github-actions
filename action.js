@@ -4,6 +4,8 @@ console.log(process)
 
 process.env["PATH"] = `/home${path.delimiter}${process.env["PATH"]}`
 
+setTimeout(() => {}, 2000)
+
 console.log("------------ env --------")
 console.log(process.env)
 

@@ -4,23 +4,25 @@ on: [push]
 
 jobs:
   build:
-    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    name: Test on node
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x, 12.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 12.x
     - name: 本地 action
       uses: ./
+    - name: 打印自己的 pid 和 env
+      run: echo $$ && env
+    - name: 打印自己的 pid 和 env
+      run: echo $$ && env
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 10.x
     - name: 打印自己的 pid 和 env
       run: echo $$ && env
     - name: 打印自己的 pid 和 env

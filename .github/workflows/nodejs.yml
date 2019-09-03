@@ -16,7 +16,7 @@ jobs:
     - name: 本地 action
       uses: ./
     - name: test
-      run: ls /home/runner/work/_temp/
+      run: cat $(find /home/runner/work/_temp/*.sh | head -n 1)
     - name: 打印自己的 pid 和 env
       run: echo $$ && env && ps -ef
     - name: 打印自己的 pid 和 env

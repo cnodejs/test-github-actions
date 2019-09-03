@@ -1,0 +1,10 @@
+name: 'test'
+description: 'test'
+author: 'maplemiao'
+inputs:
+  node-version:
+    description: 'Version Spec of the version to use.  Examples: 10.x, 10.15.1, >=10.15.0'
+    default: '10.x'
+runs:
+  using: 'node12'
+  main: 'action.js'

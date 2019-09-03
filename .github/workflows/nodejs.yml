@@ -21,7 +21,7 @@ jobs:
       uses: ./
       with:
         node-version: ${{ matrix.node-version }}
-    - name: 打印自己的 pid
-      run: echo $$
-    - name: 打印自己的 pid
-      run: echo $$
+    - name: 打印自己的 pid 和 env
+      run: echo $$ && env
+    - name: 打印自己的 pid 和 env
+      run: echo $$ && env
